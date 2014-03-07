@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<div ng-controller="newsController" >
+    <form name="myForm" ng-submit="symbolValidation()" > 
+        <div class="news_container" id="currentStockNews">
+            <div class="demo">AngularJS Demo</div>
+
+            Enter a stock symbol: <input type="text" ng-model="ticker" typeahead="symbols for symbols in matchSymbols($viewValue)| filter:$viewValue" typeahead-on-select="getTicker($item)" typeahead-template-url='templates/typeAhead_tpl.html' placeholder="{{placeholder}}" autofocus/> 
+            <input type="submit">
+            <div class="company_news">
+                <!-- DIRECTIVE EXAMPLE:  <div class="ng-binding news_headline" company-name></div> -->
+                <div class="ng-binding news_company_name" ng-bind-html="companyName"></div>
+
+                <div class="company_news_results">
+                    <div class="list_headlines"> 
+                        <li ng-repeat="headline in headlines" ng-class="{true:'hLineSelected',false:''}[active.article === headline.article]" ng-click="setSelected(headline); getArticle(headline.storyDetail)">
+                            {{headline.dateTime| date:'shortDate'}}: <a href="javascript:void(0)">{{headline.headline}}</a>
+                        </li>
+                    </div>
+                    <div class="news_article" ng-bind-html="newsArticle"></div> 
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

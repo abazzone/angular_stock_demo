@@ -1,0 +1,138 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/abazzone\/workspace\/angular-demo\/app\/scss\/headlines\.scss}line{font-family:\000031}}
+.news_container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  padding: 30px;
+  border: 3px solid #555;
+  margin-top: 30px;
+  border-radius: 7px;
+  position: relative;
+  background-color: #fff;
+  /* Begin Responsive Styles */
+    /*@media all and (min-width: 980px) {
+      .k-pager-numbers, .synopsis {
+        display: block;
+      }
+    }
+
+    @media all and (max-width: 767px) {
+      .k-pager-numbers {
+        display: block;
+      }
+    }
+
+    @media all and (max-width: 588px) {
+      .k-pager-numbers, .synopsis {
+        display: none;
+      }
+    }*/ }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/abazzone\/workspace\/angular-demo\/app\/scss\/headlines\.scss}line{font-family:\0000312}}
+  .news_container input[type="text"] {
+    width: 100px;
+    height: 16px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/abazzone\/workspace\/angular-demo\/app\/scss\/headlines\.scss}line{font-family:\0000317}}
+  .news_container .demo {
+    position: absolute;
+    right: 20px;
+    top: -2px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    color: darkred; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/abazzone\/workspace\/angular-demo\/app\/scss\/headlines\.scss}line{font-family:\0000327}}
+  .news_container .symbol-input {
+    width: 100px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/abazzone\/workspace\/angular-demo\/app\/scss\/headlines\.scss}line{font-family:\0000333}}
+  .news_container .company_news .news_company_name {
+    padding: 5px;
+    background: url(https://images.etrade.wallst.com/v1/images/modules/center2.gif) 50% 14% repeat-x;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 15px;
+    border: #b8b7b8 solid 1px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/abazzone\/workspace\/angular-demo\/app\/scss\/headlines\.scss}line{font-family:\0000345}}
+  .news_container .company_news .company_news_results {
+    border: #b8b7b8 solid;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-width: 0 1px 1px 1px;
+    height: 400px;
+    overflow: hidden;
+    background-color: #f7f7f7;
+    display: flex; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/abazzone\/workspace\/angular-demo\/app\/scss\/headlines\.scss}line{font-family:\0000355}}
+    .news_container .company_news .company_news_results .hLineDefault {
+      background-color: #f7f7f7; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/abazzone\/workspace\/angular-demo\/app\/scss\/headlines\.scss}line{font-family:\0000359}}
+    .news_container .company_news .company_news_results .list_headlines {
+      height: inherit;
+      width: 45%;
+      overflow: auto;
+      display: inline-block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/abazzone\/workspace\/angular-demo\/app\/scss\/headlines\.scss}line{font-family:\0000365}}
+      .news_container .company_news .company_news_results .list_headlines li {
+        list-style-type: none;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-left: 10px;
+        line-height: 25px;
+        cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/abazzone\/workspace\/angular-demo\/app\/scss\/headlines\.scss}line{font-family:\0000374}}
+        .news_container .company_news .company_news_results .list_headlines li.hLineSelected {
+          background-color: #fff;
+          border-width: 1px 0 1px 0;
+          border-style: solid;
+          border-color: #b8b7b8; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/abazzone\/workspace\/angular-demo\/app\/scss\/headlines\.scss}line{font-family:\0000381}}
+        .news_container .company_news .company_news_results .list_headlines li:first-child {
+          border-top: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/abazzone\/workspace\/angular-demo\/app\/scss\/headlines\.scss}line{font-family:\0000384}}
+        .news_container .company_news .company_news_results .list_headlines li:last-child {
+          /* border-bottom:none;*/ }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/abazzone\/workspace\/angular-demo\/app\/scss\/headlines\.scss}line{font-family:\0000390}}
+    .news_container .company_news .company_news_results .news_article {
+      flex: 1;
+      padding: 10px;
+      display: inline-block;
+      vertical-align: top;
+      height: inherit;
+      text-align: left;
+      overflow: auto;
+      background-color: #fff;
+      font-weight: bold; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/abazzone\/workspace\/angular-demo\/app\/scss\/headlines\.scss}line{font-family:\00003101}}
+      .news_container .company_news .company_news_results .news_article pre {
+        display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/abazzone\/workspace\/angular-demo\/app\/scss\/headlines\.scss}line{font-family:\00003105}}
+      .news_container .company_news .company_news_results .news_article p:first-child {
+        font-weight: bold; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/abazzone\/workspace\/angular-demo\/app\/scss\/headlines\.scss}line{font-family:\00003109}}
+      .news_container .company_news .company_news_results .news_article p {
+        font-weight: normal; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/abazzone\/workspace\/angular-demo\/app\/scss\/headlines\.scss}line{font-family:\00003117}}
+  .news_container .option_typeAhead {
+    padding-left: 5px;
+    padding-right: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/abazzone\/workspace\/angular-demo\/app\/scss\/headlines\.scss}line{font-family:\00003121}}
+    .news_container .option_typeAhead:hover {
+      background-color: cornflowerblue;
+      color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/abazzone\/workspace\/angular-demo\/app\/scss\/headlines\.scss}line{font-family:\00003125}}
+    .news_container .option_typeAhead .ticker_typeAhead {
+      margin-right: 10px;
+      padding-left: 5px;
+      display: table-cell;
+      width: 60px;
+      font-weight: bold; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/abazzone\/workspace\/angular-demo\/app\/scss\/headlines\.scss}line{font-family:\00003132}}
+    .news_container .option_typeAhead .description_typeAhead {
+      display: table-cell; }
+  @media all and (max-width: 980px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/abazzone\/workspace\/angular-demo\/app\/scss\/headlines\.scss}line{font-family:\00003139}}
+    .news_container .k-pager-numbers, .news_container .synopsis {
+      display: none; } }
